@@ -1,7 +1,6 @@
 import React from "react";
 import StudentDashboard from "../assets/StudentDashboard.png";
 import BlogSite from "../assets/BlogSite.png";
-import EcoWare from "../assets/EcoWare.png";
 import EstateEcommerce from "../assets/EstateEcommerce.png";
 
 const Work = () => {
