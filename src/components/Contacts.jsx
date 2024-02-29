@@ -2,7 +2,7 @@ import React from "react";
 
 const Contacts = () => {
   return (
-    <div name="contact" className="bg-[#0a192f] text-gray-300 w-full h-screen">
+    <div name="contact" className="bg-[#0a192f] text-gray-300 w-full">
       <div className="max-w-[1000px] mx-auto p-8 mx-top-8 flex flex-col justify-center w-full">
         <div className="py-6 mx-top-8">
           <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300 py-top-4">
@@ -22,23 +22,26 @@ const Contacts = () => {
           >
             <input
               type="text"
-              className="bg-[#ccd6f6] p-2 rounded w-3/5"
+              className="bg-[#ccd6f6] p-2 rounded w-3/5 text-black"
               placeholder="Name"
               name="name"
+              required
             />
             <input
               type="email"
-              className="my-4 p-2 bg-[#ccd6f6] rounded w-3/5"
+              className="my-4 p-2 bg-[#ccd6f6] rounded w-3/5 text-black"
               placeholder="Email"
               name="email"
+              required
             />
             <textarea
-              className="p-2  bg-[#ccd6f6] rounded w-3/5"
+              className="p-2  bg-[#ccd6f6] rounded w-3/5 text-black"
               placeholder="Message"
               name="message"
               rows="8"
+              required
             />
-            <button className="text-white border-2 px-4 py-3 my-8 mx-auto flex items-center hover:bg-pink-600 hover:text-gray-300 cursor-pointer hover:border-pink-600">
+            <button className="text-white border-2 px-4 py-3 mt-8 mx-auto flex items-center hover:bg-pink-600 hover:text-gray-300 cursor-pointer hover:border-pink-600">
               Let's collaborate:)
             </button>
           </form>
