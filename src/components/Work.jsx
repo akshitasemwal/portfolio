@@ -1,79 +1,105 @@
-import React from 'react'
-import StudentDashboard from '../assets/StudentDashboard.png'
-import BlogSite from '../assets/BlogSite.png'
-import EcoWare from '../assets/EcoWare.png'
+import React from "react";
+import StudentDashboard from "../assets/StudentDashboard.png";
+import BlogSite from "../assets/BlogSite.png";
+import EcoWare from "../assets/EcoWare.png";
+import EstateEcommerce from "../assets/EstateEcommerce.png";
 
 const Work = () => {
   return (
-    <div name="work" className="bg-[#0a192f] w-full md:h-screen text-gray-300">
-      <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-        <div className='my-8'> 
+    <div name="work" className="bg-[#0a192f] w-full text-gray-300">
+      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full">
+        <div className="my-8">
           <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300 py-top-4 ">
             Projects
           </p>
-          <p className='text-2xl text-[#8892b0] py-top-4'>Projects I have worked on.</p>
+          <p className="text-2xl text-[#8892b0] py-top-4">
+            Projects I have worked on.
+          </p>
         </div>
 
         {/*Container*/}
-        <div className='h-full w-full flex flex-col justify-start items-start pb-20'>
-          
-          {/*Grid item*/}
-          <div style={{backgroundImage: `url(${StudentDashboard})`}}
-            className='shadow-lg shadow-[#040c16] group container rounded mx-auto content-div p-10 lg:w-2/4 sm:min-w-fit my-bottom-7 h-52'>
-
-            {/* Hover Effect */}
-            <div className='opacity-0 group-hover:opacity-100 '>
-              <div className='pt-8 text-center'>
-                {/* <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
-                </a> */}
-                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                  <a href='https://github.com/akshitasemwal/StudentDashboard'>
+        <div className="flex flex-col justify-center items-center w-full">
+          <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-6 p-8">
+            <div>
+              <h2 className="text-4xl py-2 text-left font-bold text-[#dce2f3]">
+                Estate Ecommerce
+              </h2>
+              {/* <p className="text-[#ccd6f6]"> */}
+              <div>
+                <p>
+                  MERN stack based real estate marketplace application with
+                  responsive UI that conducts seam-less CRUD operations for
+                  property listings. Authenticated users can buy/sell/rent any
+                  listings of their choice and search for desired listings using
+                  the search functionality.
+                </p>
+                <a
+                  href="https://github.com/akshitasemwal/Estate-Ecommerce"
+                  target="new"
+                  className=""
+                >
+                  <button className="pink-600 p-2 border-2 border-[#dce2f3]">
                     Code
-                  </a>
-                </button>
+                  </button>
+                </a>
+
+                <button>Live</button>
               </div>
             </div>
-          </div>
-
-          <div style={{backgroundImage: `url(${BlogSite})`}}
-            className='shadow-lg shadow-[#040c16] group container rounded mx-auto content-div p-10 lg:w-2/4 sm:min-w-fit h-52 my-7'>
-            {/* Hover Effect */}
-            <div className='opacity-0 group-hover:opacity-100 '>
-              <div className='pt-8 text-center'>
-                {/* <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
-                </a> */}
-                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                  <a href='https://github.com/akshitasemwal/BlogSite'>
-                    Code
-                  </a>
-                </button>
-              </div>
+            <div className="items-center">
+              <div
+                style={{ backgroundImage: `url(${EstateEcommerce})` }}
+                className="shadow-lg shadow-[#040c16] rounded mx-auto content-div p-6 sm:min-w-fit my-bottom-7 h-60"
+              ></div>
             </div>
           </div>
-
-          <div style={{backgroundImage: `url(${EcoWare})`}}
-            className='shadow-lg shadow-[#040c16] group container rounded mx-auto content-div p-10 lg:w-2/4 sm:min-w-fit h-52'>
-            {/* Hover Effect */}
-            <div className='opacity-0 group-hover:opacity-100 '>
-              <div className='pt-8 text-center'>
-                {/* <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
-                </a> */}
-                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                  <a href='https://github.com/akshitasemwal/EcoWare'>
-                    Code
-                  </a>
-                </button>  
-              </div>
-            </div>
-          </div>
-          
         </div>
+
+        <div className="flex flex-col justify-center items-center w-full">
+          <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-6 p-8">
+            <div className="items-center">
+              <div
+                style={{ backgroundImage: `url(${BlogSite})` }}
+                className="shadow-lg shadow-[#040c16] group container rounded mx-auto content-div p-6 sm:min-w-fit my-bottom-7 h-60"
+              ></div>
+            </div>
+            <div className="text-left text-3xl font-bold text-[#dce2f3]">
+              <p>BlogSite</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col justify-center items-center w-full">
+          <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-6 p-8">
+            <div className="text-left text-3xl font-bold text-[#dce2f3]">
+              <p>Estate Ecommerce</p>
+            </div>
+            <div className="items-center">
+              <div
+                style={{ backgroundImage: `url(${StudentDashboard})` }}
+                className="shadow-lg shadow-[#040c16] group container rounded mx-auto content-div p-6 sm:min-w-fit my-bottom-7 h-60"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col justify-center items-center w-full">
+          <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-6 p-8">
+            <div className="items-center">
+              <div
+                style={{ backgroundImage: `url(${StudentDashboard})` }}
+                className="shadow-lg shadow-[#040c16] group container rounded mx-auto content-div p-6 sm:min-w-fit my-bottom-7 h-60"
+              ></div>
+            </div>
+            <div className="text-left text-3xl font-bold text-[#dce2f3]">
+              <p>Estate Ecommerce</p>
+            </div>
+          </div>
+        </div>
+        {/* ok */}
       </div>
     </div>
   );
-}
+};
 
-export default Work
+export default Work;

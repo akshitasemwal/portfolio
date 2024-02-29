@@ -2,29 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+@layer base {
+  body {
+    @apply font-[Raleway];
+  }
 
-@layer base{
-    body{
-        @apply font-[Raleway]
-    }
-
-    li{
-        @apply px-4 cursor-pointer
-    }
+  li {
+    @apply px-4 cursor-pointer;
+  }
 }
 
-.content-div{
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: cover;
-}
-
-.content-div:hover{
-    background-image: linear-gradient(
-        to right,
-        rgba(112, 157, 255, 1 ),
-        hsla( 242, 74%, 61%, 1)
-    )!important;      /*external css is given less priority and was getting neglected*/
+.content-div {
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
 }
